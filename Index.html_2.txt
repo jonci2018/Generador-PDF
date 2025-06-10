@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de PDF Creativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Generador de PDF con IA</h1>
+        <form id="pdfForm">
+            <label for="title">Título del documento:</label>
+            <input type="text" id="title" name="title" placeholder="Ej. Guía de productividad" required>
+
+            <label for="content">Contenido:</label>
+            <textarea id="content" name="content" rows="8" placeholder="Escribe aquí el contenido del PDF..." required></textarea>
+
+            <button type="submit">✨ Generar vista previa</button>
+        </form>
+
+        <div class="preview">
+            <h2>📄 Vista previa</h2>
+            <h3 id="previewTitle"></h3>
+            <p id="previewContent"></p>
+        </div>
+
+        <button id="downloadBtn">⬇️ Descargar PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
